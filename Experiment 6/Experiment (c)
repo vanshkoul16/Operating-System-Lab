@@ -1,0 +1,24 @@
+*DATE: 13/9/26*
+*EXP. No. 6C*
+
+*6(c) Write a shell script that deletes all lines containing a specified word in one or more files supplied as arguments to it*
+
+*Steps:*
+1) Open terminal
+2) Create the script - nano http://exp6c.sh
+3) Enter:
+#!/bin/bash
+read -p "Enter word to delete: " word
+for file in "$@"
+do
+  sed -i "/$word/d" "$file"
+done
+echo "Lines containing {$word} have been deleted"
+4) Save the file using Ctrl+O -> Enter and exit using Ctrl+X
+5) Give execution permission -> chmod +x http://exp6c.sh
+6) Create a sample file -> nano http://file1.txt - Add some lines containing the word you want to delete - SAVE and Exit
+7) Execute script by providing one or more filenames -> ./exp6c.sh http://file1.txt http://file2.txt
+8) Enter the word when prompted
+9) Check the modified file -> cat http://file1.txt
+
+*Result:* Successfully deleted all lines containing the specified word from one or more files supplied as arguments
