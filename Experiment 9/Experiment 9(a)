@@ -1,0 +1,15 @@
+Experiment 9(a): CPU Task Simulation in C
+
+Steps:
+Open the Ubuntu terminal.
+Create the C program using nano expt9.c.
+Write the C program to simulate a CPU-intensive task using an infinite loop and a counter.
+Save the file using Ctrl + O, press Enter, and exit using Ctrl + X.
+Compile the program using gcc expt9.c -o expt9.
+Execute the program using ./expt9.
+Observe the counter values displayed on the terminal.
+Press Ctrl + C to terminate the program.
+Execute the top command to monitor CPU utilization and running processes.
+Press q to exit the top command.
+
+Result: A CPU-intensive task was simulated using a C program, and system resource utilization was monitored using the top command.
