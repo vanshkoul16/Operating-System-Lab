@@ -1,0 +1,25 @@
+*DATE: 24-08-26*
+*EXP. No. 3(b)*
+
+*Experiment - Use sed command to swap the first and second words of each line in a file*
+
+*Command - sed -i 's/^ $[^ ]_$ $._$$/\2 \1/' http://name.txt*
+
+*Explanation:*
+- Sed - stream editor used to modify text
+- -i - modifies the file directly
+- ^ - indicates the beginning of a line
+- $[^ ]_$ - matches and stores the first word
+- $._$ - matches and stores the remaining text
+- \2 \1 - reverses their order, putting the second part first
+- http://name.txt - input text file
+
+*Procedure -*
+1) Open the terminal
+2) Now, create a file named http://name.txt using the cat command and enter the names
+3) Press ctrl + D to save the file and return to terminal
+4) Use the following sed command to interchange the first and last names: sed -i 's/^ $[^ ]_$ $._$$/\2 \1/' http://name.txt
+5) Display the modified file using: cat http://name.txt
+6) Observe that the first and last names have been interchanged
+
+*Result -* The first and last names were successfully interchanged using the sed command
