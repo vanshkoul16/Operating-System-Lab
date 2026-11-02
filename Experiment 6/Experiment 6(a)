@@ -1,0 +1,26 @@
+
+*DATE: 13-9-26*
+*EXP. No. 6(a)*
+
+*Experiment 6(a) - Write a shell script that determines the period for which a specified user is working on the system*
+
+*Steps*
+1) Open the ubuntu terminal
+2) Create a shell script -> nano http://user.sh
+3) Enter the required shell script to check the specified user's login / working time
+4) Save and Exit the file -> Ctrl+O, Enter & Ctrl+X
+5) Give execution permission -> chmod +x http://user.sh
+6) Execute the script by passing the username (./user.sh xbox user)
+7) The script displays the user's login time if the user is currently logged in
+
+*Script used:*
+#!/bin/bash
+read -p "Enter username: " user
+login_time=$(who | awk -v u="$user" '$1 == u {print $3, $4; exit}')
+if [ -z "$login_time" ]
+then
+  echo "user is not currently logged in."
+else
+  echo "Login time: $login_time"
+fi
+*Result:* Successfully determined the login / working period information of the specified user
