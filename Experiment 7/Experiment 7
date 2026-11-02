@@ -1,0 +1,41 @@
+
+*DATE: .................*
+*EXP. No. 7*
+
+*Exp 7: Write a shell script and a C program to perform the following string operation*
+- To extract a substring from a given string
+- To find the length of given string
+- Compare the running time of above shell script & C program using the time command
+
+*Steps*
+
+- *Write the C Program*
+  Create a C Program to find the length of String and extract a substring from given String
+  Complete the C program
+  `gcc exp5.c -o string` Compilation command and successful compilation
+
+- *Execute the C Program*
+  Enter the required string, string position and no. of characters
+
+- *Write the shell script* - Create shell script to perform the same operation
+
+- *Execute the shell script* `./exp5.sh`
+
+- *Find execution time of C Program* `time ./string`
+
+- *Find execution time of shell script* `time ./string` [shell script]
+
+- *Compare Execution time*
+
+*Shell Script Logic (visible in screenshot):*
+echo "Enter a String"
+read str
+echo "Length of String: ${#str}"
+
+echo "Enter String Position:"
+read start
+
+echo "Enter Number of character:"
+read length
+
+echo "Substring: ${str:start:length}"
