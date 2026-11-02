@@ -1,0 +1,60 @@
+*DATE: 19-8-26*
+*EXP. No. 2(a)*
+
+*Experiment 2(a) - Working with basic bash commands*
+
+*Commands:*
+
+*1) pwd - Displays the present working directory*
+*Options / Features:*
+- pwd -L : displays the logical path
+- pwd -P : displays the physical path
+- pwd --help : displays the help information
+
+*2) ls - Lists the files and directories present in the current directory*
+*Options / Features:*
+- ls -l : displays detailed information
+- ls -a : displays all files including hidden files
+- ls -lt : displays detailed information along with time in ascending order
+
+*3) cd - Changes the current working directory*
+*Options / Features:*
+- cd.. : moves to the parent directory
+- cd (directory name) : Changes the working directory to the given directory
+- cd : Changes the current directory to the user's home directory
+
+*4) mkdir - used to create a new directory*
+*Options / features:*
+- mkdir -v : Creates directory and displays message
+- mkdir -m : Sets the file mode of directory
+- mkdir -p : makes parent directory if they do not exist[name][mode]
+
+---
+
+*5) rmdir - used to remove an empty directory*
+*Options / Features*
+- rmdir -p : removes the directory and its empty parent directory
+- rmdir -v : removes directory and displays message[name]
+
+*6) rm - used to remove files and directories*
+*Options / Features:*
+- rmdir [file name] : asks for confirmation before deleting [written as rmdir but should be rm -i]
+- rm -r [file name] : remove directories and their contents recursively
+- rm -f [file name] : forces deletion without confirmation
+
+*7) touch - used to create an empty file or update the file's timestamp*
+*Options / Features*
+- touch -a [file name] : Changes only access time
+- touch -m [file name] : Changes only modification time
+- touch [file name] : Creates a new file
+
+*8) cp - used to copy files and directories*
+*Options / Features:*
+- cp -i : asks for confirmation before overwriting a file
+- cp -v : displays information about copying process[name]
+
+*9) mv - used to move or rename files and directories*
+
+*10) head - displays the beginning of a file*
+
+*11) tail - displays the end of a file*
