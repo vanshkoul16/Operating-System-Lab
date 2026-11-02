@@ -1,0 +1,30 @@
+*DATE: 9-9-26*
+*EXP. No. 5(b)*
+
+*5(b) Write a shell script that takes file name as arguments and convert all of them to uppercase*
+
+*Theory*
+- tr command is used to translate lowercase characters into uppercase characters
+- mv command is used to rename a file
+
+*Algorithm*
+- Start the shell script
+- Accept the file name as a command line argument $1
+- Check whether the given file exists using the -f option
+- If the file exists, convert its name from lowercase to uppercase using tr command
+- Rename the file using mv command
+- Display a message that the file name has been changed to uppercase
+- If the file does not exist, display an appropriate error message
+- Stop
+
+*Shell Script*
+#!/bin/bash
+if [ -f "$1" ]
+then
+  mv "$1" "$(echo "$1" | tr '[:lower:]' '[:upper:]')"
+  echo "File Name changed to Upper Case"
+else
+  echo "$1 does not exist"
+fi
+*Result*
+The shell script was successfully executed and the given file name was converted to uppercase.
