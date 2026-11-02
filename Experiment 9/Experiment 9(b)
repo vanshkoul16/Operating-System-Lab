@@ -1,0 +1,19 @@
+Experiment 9(b): I/O Task Simulation and Memory Mapping
+
+Steps:
+Open the Ubuntu terminal.
+Create the C program using nano expt9b.c.
+Write the C program to simulate an I/O task by repeatedly writing data to a file using fopen(), fprintf(), and fclose().
+Save the file using Ctrl + O, press Enter, and exit using Ctrl + X.
+Compile the program using gcc expt9b.c -o expt9b.
+Execute the program using ./expt9b.
+Observe the I/O task messages displayed on the terminal.
+Press Ctrl + C to terminate the program.
+Execute the top command to monitor system resource utilization. Press q to exit.
+Display the contents of the generated file using cat dummy.txt.
+Run the program again using ./expt9b and keep it running.
+Open another terminal and identify the process ID using pgrep -a expt9b.
+Examine the memory mappings using pmap -x PID, replacing PID with the actual process ID.
+Press Ctrl + C in the terminal running the program to terminate it.
+
+Result: An I/O-intensive task was simulated using file operations, system resource utilization was monitored using top, and process memory mappings were examined using pmap -x.
