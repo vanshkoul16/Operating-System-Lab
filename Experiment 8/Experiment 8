@@ -1,0 +1,27 @@
+
+*DATE: 28-9-26*
+*EXP. No. 8*
+
+*Experiment 8 - Write a C program that takes as command line argument the no. of megabytes of memory to consume that must memory observed during execution using free command*
+
+- Create a C program named exp6.c - memory size in MB from command line & allocate the required memory using malloc()
+- Complete the program `gcc exp6.c -o exp6`
+- Run the program by providing the requirements - `./exp6 100`
+- Observe Memory usage (free -h)
+- Check the Program memory usage `ps aux | grep exp6`
+- Release all allocated memory
+- This allows the memory usage to be ... has terminated
+
+*Terminal Output (from screenshot):*
+vboxuser@kashik: $ gcc exp6.c -o exp6
+vboxuser@kashik: $ ./exp6 100
+Memory allocated Successfully.
+Press Ctrl+C to release memory and exit.
+^C
+Signal Interrupt Detected.
+Memory released.
+vboxuser@kashik: $
+*Second screenshot commands:*
+$ free -h
+$ ps aux | grep exp6
+$ free -h
