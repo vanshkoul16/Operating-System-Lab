@@ -1,0 +1,29 @@
+
+*DATE: 19/8/26*
+*EXP. No. 2(b)*
+
+*Experiment - Flowchart based directory management*
+
+*PROCEDURE*
+
+~ $ mkdir Sem_3
+~ $ cd Sem_3
+~ /Sem_3 $ mkdir OS COA cyber HSMC
+~ /Sem_3 $ ls
+COA cyber HSMC OS
+~ /Sem_3/COA $ mkdir Theory Practical
+~ /Sem_3/ $ cd..
+~ /Sem_3 $ cd cyber
+~ /Sem_3/cyber $ mkdir Theory Lab
+~ /Sem_3/cyber $ cd..
+~ /Sem_3 $ cd HSMC
+~ /Sem_3/HSMC $ mkdir Book Class
+~ /Sem_3/HSMC $ cd..
+~ /Sem_3 $ cd OS
+~ /Sem_3/OS $ mkdir Theory lab
+~ /Sem_3/OS $ ls
+Lab theory
+~ /Sem_3/OS $ cd..
+~ /Sem_3 $ cd COA
+~ /Sem_3/COA $ ls
+Practical theory
