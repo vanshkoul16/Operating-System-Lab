@@ -1,0 +1,22 @@
+
+*DATE: 13-9-26*
+*EXP. No. 6(b)*
+
+*6(b) Display lines b/w start and end line numbers using shell script passed as argument*
+
+*Steps:*
+1) Open terminal
+2) Create the script -> nano http://exp6b.sh
+3) Enter:
+#!/bin/bash
+read -p "Enter filename: " file
+read -p "Enter starting line number: " start
+read -p "Enter ending line: " end
+sed -n "${start},${end}p" "$file"
+4) Save using Ctrl+O -> Enter and exit using Ctrl+X
+5) Give Execution permission -> chmod +x http://exp6b.sh
+6) Create a sample file -> nano http://test.txt Enter several lines Save and Exit
+7) Run the script -> ./exp6b.sh
+8) Enter the filename, starting line and ending line when asked
+
+*Result:* The specified range of lines is displayed from the file
